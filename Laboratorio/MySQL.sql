@@ -6,19 +6,17 @@ create table login(
   pasword varchar(100)
 );
 INSERT INTO `login`(`username`,`pasword`)
-VALUES('victor','2026');
+VALUES('galan','2025');
 
 CREATE TABLE textiles (
    id int(11) NOT NULL AUTO_INCREMENT,
-   `clave` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-   `nombre` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-   `domicilio` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
-   `telefono` varchar(15) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-   `correo_electronico` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `fecha_nacimiento` date DEFAULT NULL,
-   `genero` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-   PRIMARY KEY(`id`)
+   `clave` INT NOT NULL,
+   `producto` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+   `tipo` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+   `tela` varchar(15) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+   `cantidad_stock` INT NOT NULL,
+	`precio` INT NOT NULL,
 );
-insert into persona1 values(1,01,"luis","villa",73838,"luis@gmail.com","1989-05-02","Masculino");
+insert into textiles values(1,01,"Cubertura almohada","Ropa de cama","Poliéster",30,100);
 
 select * from persona1;
