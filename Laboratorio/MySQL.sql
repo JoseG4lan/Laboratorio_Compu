@@ -19,4 +19,4 @@ CREATE TABLE textiles (
 );
 insert into textiles values(1,01,"Cubertura almohada","Ropa de cama","Poliéster",30,100);
 
-select * from persona1;
+select * from textiles;
